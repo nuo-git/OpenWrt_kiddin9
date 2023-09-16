@@ -6,7 +6,7 @@ SHELL_FOLDER=$(dirname $(readlink -f "$0"))
 
 rm -rf feeds/kiddin9/{rtl*,shortcut-fe,nft-fullcone}
 
-rm -rf devices/common/patches/{fix.patch,iptables.patch,kernel-defaults.patch,targets.patch} package/feeds/luci/rpcd-mod-luci
+rm -rf devices/common/patches/{fix.patch,iptables.patch,kernel-defaults.patch,targets.patch} package/feeds/luci/rpcd-mod-luci toolchain/musl
 
 sed -i "s/PKG_SOURCE_DATE:=.*/PKG_SOURCE_DATE:=2099-12-06/" package/network/config/netifd/Makefile
 
