@@ -4,9 +4,9 @@ shopt -s extglob
 
 SHELL_FOLDER=$(dirname $(readlink -f "$0"))
 
-rm -rf feeds/kiddin9/{rtl*,shortcut-fe,nft-fullcone}
+rm -rf feeds/kiddin9/{rtl*,shortcut-fe,nft-fullcone,fullconenat-nft} package/feeds/luci/rpcd-mod-luci toolchain/musl package/feeds/packages/gptfdisk package/utils/f2fs-tools
 
-rm -rf devices/common/patches/{fix.patch,iptables.patch,kernel-defaults.patch,targets.patch} package/feeds/luci/rpcd-mod-luci toolchain/musl
+rm -rf devices/common/patches/{fix.patch,iptables.patch,kernel-defaults.patch,targets.patch}
 
 sed -i "s/PKG_SOURCE_DATE:=.*/PKG_SOURCE_DATE:=2099-12-06/" package/network/config/netifd/Makefile
 
